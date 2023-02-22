@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册-轻阅读</title>
+	</head>
+	<style>
+		/*登陆开始*/
+		.content01{
+			background-color:#F5F5F5;width: 100%;height: 800px;margin: 0px auto;
+		}
+		.logo01{
+			position: relative;top: 20px;right: 640px;
+		}
+		.content01 .denglu{
+			margin: 0px auto;width: 900px;height: 800px;text-align: center;
+		}
+		.content01 .denglu .denglu1{
+		   background-color: #fff;width: 400px;height: 500px;text-align: center;margin: -42px auto;
+		   border: 4px solid #ececec;
+		}
+		.content01 .denglu .denglu1 .normal-title{
+			position: relative;top: 60px;font-size: 22px;display: block;
+		}
+		.normal-title a.active{
+			border-bottom: 3px solid #228B22;padding: 10px;width: 60px;
+			color: #228B22;
+		}
+		.normal-title b{
+			color: 	#C0C0C0;
+		}
+		.normal-title a.sign-up{
+		    padding: 10px;width: 60px;
+			color: 	#C0C0C0;
+		}
+		.normal-title a.sign-up:hover{
+			border-bottom: 3px solid #228B22;
+		}
+		.input00{
+		   width: 300px; background-color: green;height: 100px;text-align: center;position: relative;top: 120px;left: 50px;
+		}
+		.input00 .input01{
+			background:	#F5F5F5;;width: 300px;height: 50px;border: 1px solid #D3D3D3;
+		}
+		.input00 .input02{
+			background-color: #F5F5F5;width: 300px;height: 50px;border: 1px solid #D3D3D3;
+		}
+		.input00 .input03{
+			background-color: #F5F5F5;width: 300px;height: 50px;border: 1px solid #D3D3D3;
+		}
+		.input00 input{
+			border: 1px solid #F5F5F5;position: absolute;left: 48px;
+		}
+		.input01-icon{
+			position: absolute;left: 12px;top: 9px;
+		}
+		.input02-icon{
+			position: absolute;left: 10px;top: 59px;
+		}
+		.input03-icon{
+			position: absolute;left: 10px;top: 109px;
+		}
+		.remember-btn{
+			position: relative;left: -120px;top: 139px;
+		}
+		.remember-btn span{
+			color: #808080;
+		}
+		.denglu1 button{
+			display: inline-block;
+			background-color:#6495ED;position: relative;top: 160px;
+			padding: 5px 120px 5px 120px;font-size: 22px;text-decoration: none;
+			color: #fff;border-radius: 20px;border-color: #6495ED;
+		}
+		.denglu1 button:hover{
+			background-color:#0000CD;
+		}
+		.more-sign{
+			position: relative;bottom: 100px;
+		}
+		.more-sign1{
+			position: relative;bottom: 100px;padding: 10px;
+		}
+		.more-sign span{
+			color: #808080;
+		}
+		/*注册开始*/
+		.content01 .denglu .zhuce1{
+		   background-color: #fff;width: 400px;height: 590px;text-align: center;margin: -42px auto;
+		   border: 4px solid #ececec;
+		}
+		.content01 .denglu .zhuce1 .normal-title{
+			position: relative;top: 60px;font-size: 22px;display: block;
+		}
+		.zhuce1 .normal-title a.active{
+			padding: 10px;width: 60px;border-bottom: 3px solid #fff;
+			color: 	#C0C0C0;
+		}
+		.zhuce1 .normal-title a.active:hover{
+			border-bottom: 3px solid #228B22;
+		}
+		.zhuce1 .normal-title b{
+			color: 	#C0C0C0;
+		}
+		.zhuce1 .normal-title a.sign-up{
+		   border-bottom: 3px solid #228B22;
+		   padding: 10px;width: 60px;
+			color: #228B22;
+		}
+		.zhuce1 button{
+			display: inline-block;
+			background-color:#6495ED;position: relative;top: 200px;
+			padding: 5px 120px 5px 120px;font-size: 22px;text-decoration: none;
+			color: #fff;border-radius: 20px;border-color: #6495ED;
+		}
+		.zhuce1 button:hover{
+			background-color:#0000CD;
+		}
+		.zhuce1 .xieyi{
+			position: relative;top: 220px;font-size: 13px;color: #808080;
+		}
+		.zhuce1 .xieyi a{
+			color: 	#6495ED;
+		}
+		.zhuce1 .more-sign{
+			position: relative;top: 230px;
+		}
+		.zhuce1 .more-sign1{
+			position: relative;top: 230px;
+		}
+	</style>
+	<body><div class="content01" id="content01">
+		<div class="denglu">
+		<div class="logo01">
+		<img src="sucai/two/logo.jpg" width="160" height="110">
+	</div>
+	<div class="zhuce1">
+		<h4 class="title">
+        <div class="normal-title">
+        <a class="active" href="denglu.html">登录</a>
+        <b>·</b>
+        <a id="sign-up" class="sign-up" href="zhuce.html">注册</a>
+        </div>
+</h4>
+<div class="input00">
+<div class="input01">
+<div class="input01-icon">
+	<img src="sucai/two/icon1.png">
+</div>
+        <input placeholder="你的昵称" type="text" name="session[email_or_mobile_number]" id="session_email_or_mobile_number" style="height:46px;width:245px;background:	#F5F5F5;" />
+        <i class="iconfont ic-user"></i>
+      </div>
+      <div class="input02-icon">
+	<img src="sucai/two/icon2.png">
+</div>
+      <div class="input02">
+      <input placeholder="设置密码" type="password" name="session[password]" id="session_password" style="height:45px;width:245px;background:#F5F5F5;"/>
+      <i class="iconfont ic-password"></i>
+    </div>
+    <div class="input03-icon">
+	<img src="sucai/two/icon03.png">
+</div>
+      <div class="input03">
+      <input placeholder="手机号" type="text" name="session[phonenumber]" id="session_phonenumber" style="height:45px;width:245px;background:#F5F5F5;"/>
+      <i class="iconfont ic-phonenumber"></i>
+    </div>
+</div>
+<button class="sign-in-button" id="sign-in-form-submit-btn" type="button">
+      <span id="sign-in-loading"></span>
+      注册
+    </button>
+    <div class="xieyi">点击 “注册” 即表示您同意并愿意遵守绿色网站<br/>
+<a href="#">用户协议</a> 和 <a href="#">隐私政策</a> 。</div>
+<div class="more-sign">
+	<span><img src="sucai/two/icon3.png"></span>
+	<span>社交帐号直接注册</span>
+	<span><img src="sucai/two/icon3.png"></span>
+</div>
+<div class="more-sign1">
+	<a href="#"><span><img src="sucai/two/icon5.png"></span></a>
+	<a href="#"><span><img src="sucai/two/icon6.png"></span></a>
+</div>
+</div>
+	</div>
+	</div>
+	</div>
+	</body>
+</html>

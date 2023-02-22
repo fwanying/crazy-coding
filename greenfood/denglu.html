@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆-绿色食品</title>
+				<link rel="stylesheet" type="text/css" href="index.css"> 
+	</head>
+	<body>
+	<!--head begin-->
+	<div class="content01" id="content01">
+		<div class="denglu">
+		<div class="logo01">
+		<img src="sucai/two/logo.jpg" width="160" height="110">
+	</div>
+		<div class="denglu1">
+		<h4 class="title">
+        <div class="normal-title">
+        <a class="active" href="denglu.html">登录</a>
+        <b>·</b>
+        <a id="sign-up" class="sign-up" href="zhuce.html">注册</a>
+        </div>
+</h4>
+<div class="input00">
+<div class="input01">
+<div class="input01-icon">
+	<img src="sucai/two/icon1.png">
+</div>
+        <input placeholder="用户名或手机号" type="text" name="session[email_or_mobile_number]" id="session_email_or_mobile_number" style="height:46px;width:245px;background:	#F5F5F5; "class="uname" />
+        <i class="iconfont ic-user"></i>
+      </div>
+      <div class="input02-icon">
+	<img src="sucai/two/icon2.png">
+</div>
+      <div class="input02">
+      <input placeholder="密码" type="password" name="session[password]" id="session_password" style="height:45px;width:245px;background:#F5F5F5;"/>
+      <i class="iconfont ic-password"></i>
+    </div>
+</div>
+<div class="remember-btn">
+      <input type="checkbox" value="true" checked="checked" name="session[remember_me]" id="session_remember_me" /><span>记住我</span>
+    </div>
+    <button class="sign-in-button" id="sign-in-form-submit-btn" type="button">
+      <span id="sign-in-loading"></span>
+      登录
+    </button>
+</div>
+<div class="more-sign">
+	<span><img src="sucai/two/icon3.png"></span>
+	<span>社交帐号登录</span>
+	<span><img src="sucai/two/icon3.png"></span>
+</div>
+<div class="more-sign1">
+	<a href="#"><span><img src="sucai/two/icon4.png"></span></a>
+	<a href="#"><span><img src="sucai/two/icon5.png"></span></a>
+	<a href="#"><span><img src="sucai/two/icon6.png"></span></a>
+</div>
+	</div>
+	</div>
+	<script>
+	  var reg = /^[a-zA-Z0-9_-]{6,16}$/;
+	  var uname = document.querySelector('.uname');
+	  var span = document.querySelector('span');
+	  uname.onblur = function () {
+	    if (reg.test(this.value)) {
+	      span.className = 'success';
+	      span.innerHTML = '用户名合法！';
+	    } else {
+	      span.className = 'wrong';
+	      span.innerHTML = '用户名不符合规范！';
+	    }
+	  };
+	</script>
+	</body>
+	</html>
